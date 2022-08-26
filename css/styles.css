@@ -455,13 +455,10 @@ line-height: 1.14;
 text-transform: uppercase;
 color: var(--white-color);
 margin-bottom: 20px;
-
 }
 .footer-telegram{
     width: 570px;
     height: 86px;
-}
-.footer-form {
 }
 .footer-label {
     display: block;
