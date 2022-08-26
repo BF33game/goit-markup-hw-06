@@ -482,6 +482,10 @@ margin-bottom: 20px;
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255);
 }
 .footer-input::placeholder{
     font-weight: 400;
@@ -706,16 +710,21 @@ margin-bottom: 20px;
     padding-left: 16px;
     padding-top: 12px;
     padding-bottom: 0px;
-    transition: outline-color var(--transform--);
-    outline-color: transparent;
-    display: block;
+    transition: border var(--transform--);
+     display: block;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    line-height: 1.16;
+    color: rgba(117, 117, 117);
 }
+
 .modal-comment::placeholder{
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117);
 }
 .input-wrap{
     position: relative;
@@ -725,6 +734,13 @@ margin-bottom: 20px;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
+}
+.modal-input{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117);
 }
 .modal-input,.modal-comment:focus{
     outline-color: var(--accent-text-color);
