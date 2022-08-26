@@ -299,7 +299,8 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-container container"><div class="adress-wrap"><a href="" class="logo">Web<span class="logo-bottom">Studio</span></a>
+        <div class="footer-container container">
+            <div class="adress-wrap"><a href="" class="logo">Web<span class="logo-bottom">Studio</span></a>
             <address>
              <ul class="bottom">
                 <li class="bottom-list">
@@ -343,9 +344,26 @@
                     </a>
                 </li>
         </div>
+        <div class="footer-telegram">
+            <form class="footer-form">
+                <label class="footer-label" for="user-email">Підпишіться на розсилку</label>
+               <div class="footer-iput-wrap"><input type="email"
+                 class="footer-input" 
+                 name="user-email"
+                 id="user-email"
+                 placeholder="E-mail">
+                 <button type="submit" class="footer-button">
+                    Підписатися  
+                    <svg class="footer-input-icon" height="24" width="24">
+                        <use href="./images/icons/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+                </div>
+            </form>
+        </div>
         </div>
     </footer>
-    <div class="backdrop " data-modal>
+    <div class="backdrop is-hidden" data-modal >
         <div class="modal">
             <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
           <button class="modal-icon-btn" data-modal-close><svg class="modal-icon" width="11" height="11" >
@@ -384,9 +402,18 @@
                 <label for="user-text" class="modal-label">Коментар</label>
                 <textarea name="user-text" id="user-text" class="modal-comment" placeholder="Введіть текст"></textarea>
             </div>
-            
-            
-          </form>
+            <div class="box-wrap">
+                <input type="checkbox" class="modal-box visually-hidden" name="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                    <span class="span-icon">
+                        <svg class="box-icon" height="15" width="16">
+                            <use href="./images/icons/icons.svg#icon-box"></use>
+                        </svg>
+                    </span> 
+                Погоджуюся з розсилкою та приймаю <a href="" class="checkbox-link">Умови договору</a></label>
+            </div>
+            <button type="submit" class="modal-button">Відправити</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
